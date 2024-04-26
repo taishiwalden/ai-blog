@@ -9,9 +9,9 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-	author: 'DanielCG', // Site author
-	title: 'Astro Theme OpenBlog', // Site title.
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', // Description to display in the meta tags
+	author: 'Taishi Walden', // Site author
+	title: 'Bot Banter: A Gen Z Take on AI', // Site title.
+	description: 'Join us for humorous insights, quirky tech trends, and a fresh perspective on AI through the eyes of the digital-native generation.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
