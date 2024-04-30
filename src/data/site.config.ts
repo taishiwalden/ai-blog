@@ -10,7 +10,7 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
 	author: 'Taishi Walden', // Site author
-	title: 'Bot Banter: A Gen Z Take on AI', // Site title.
+	title: "Taishi's AI Toolbox", // Site title.
 	description: 'Join us for humorous insights, quirky tech trends, and a fresh perspective on AI through the eyes of the digital-native generation.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
