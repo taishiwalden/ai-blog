@@ -11,7 +11,7 @@ tags: ['Prompt Engineering', 'LLM', 'Product Management']
 
 Astro component syntax is a superset of HTML. The syntax was [designed to feel familiar to anyone with experience writing HTML or JSX](#differences-between-astro-and-jsx), and adds support for including components and JavaScript expressions.
 
-## JSX-like Expressions
+## Write Clear Instructions
 
 You can define local JavaScript variables inside of the frontmatter component script between the two code fences (`---`) of an Astro component. You can then inject these variables into the component's HTML template using JSX-like expressions!
 
@@ -21,7 +21,7 @@ Using this approach, you can include **dynamic** values that are calculated in t
 See below for more examples of [differences between Astro and JSX](#differences-between-astro-and-jsx).
 :::
 
-### Variables
+## Provide Reference Text
 
 Local variables can be added into the HTML using the curly braces syntax:
 
@@ -36,7 +36,23 @@ const name = 'Astro'
 </div>
 ```
 
-### Dynamic Attributes
+## Split Complex Tasks into Simpler Tasks
+
+Local variables can be added into the HTML using the curly braces syntax:
+
+```astro
+---
+const name = 'Astro'
+---
+
+<div>
+	<h1>Hello {name}!</h1>
+	<!-- Outputs <h1>Hello Astro!</h1> -->
+</div>
+```
+
+
+## Give GPT some time to think
 
 Local variables can be used in curly braces to pass attribute values to both HTML elements and components:
 
