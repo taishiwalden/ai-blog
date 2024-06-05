@@ -1,116 +1,87 @@
 ---
-title: 'GPT Prompts for Product Manager'
-description: 'A quick guide to writing better prompts in GPT tools.'
-pubDate: 'Jan 17 2024'
-heroImage: '../../assets/images/gptprompts.jpg'
-category: 'Tutorial'
-tags: ['Prompt Engineering', 'LLM', 'Product Management']
+heroImage: ../../assets/images/gptprompts.jpg
+category: Tutorial
+description: >-
+  Learn how to write better prompts in GPT tools and leverage our library of
+  prompts.
+pubDate: 2024-01-17T08:00:00.000Z
+tags:
+  - Process Mapping
+  - Project Management
+  - Program Management
+  - Prompt Engineering
+  - LLM
+  - Product Management
+title: Forum's GPT Prompt Library
 ---
 
-**If you know HTML, you already know enough to write your first Astro component.**
+> Please ensure that you do not input any Internal Forum Solutions or Client Confidential information into these tools. Adhere to best practices when utilizing these and other AI tools.
 
-Astro component syntax is a superset of HTML. The syntax was [designed to feel familiar to anyone with experience writing HTML or JSX](#differences-between-astro-and-jsx), and adds support for including components and JavaScript expressions.
+Here are a few tips when writing prompts:
+
+1. Write Clear Instructions
+2. Provide Reference Text
 
 ## Prompts for Product Managers
-
-Local variables can be added into the HTML using the curly braces syntax:
 
 ```astro
 Generate questions for customer discovery interviews regarding [Product/Feature]
 ```
+
 ```astro
 Summarize key findings from user feedback on [Product/Feature]
 ```
+
 ```astro
 Analyze competitors for [Product Category] and provide a comparison report
 ```
-```astro
-Generate questions for customer discovery interviews regarding [Product/Feature]
-```
-```astro
-Generate questions for customer discovery interviews regarding [Product/Feature]
-```
-
-## Write Clear Instructions
-
-You can define local JavaScript variables inside of the frontmatter component script between the two code fences (`---`) of an Astro component. You can then inject these variables into the component's HTML template using JSX-like expressions!
-
-:::note[dynamic vs reactive]
-Using this approach, you can include **dynamic** values that are calculated in the frontmatter. But once included, these values are not **reactive** and will never change. Astro components are templates that only run once, during the rendering step.
-
-See below for more examples of [differences between Astro and JSX](#differences-between-astro-and-jsx).
-:::
-
-## Provide Reference Text
-
-Local variables can be added into the HTML using the curly braces syntax:
-
-## Prompts for Product Managers
-
-Local variables can be added into the HTML using the curly braces syntax:
 
 ```astro
 Generate questions for customer discovery interviews regarding [Product/Feature]
 ```
 
-## Split Complex Tasks into Simpler Tasks
-
-Local variables can be added into the HTML using the curly braces syntax:
-
 ```astro
----
-const name = 'Astro'
----
-
-<div>
-	<h1>Hello {name}!</h1>
-	<!-- Outputs <h1>Hello Astro!</h1> -->
-</div>
+Generate questions for customer discovery interviews regarding [Product/Feature]
 ```
 
-
-## Give GPT some time to think
-
-Local variables can be used in curly braces to pass attribute values to both HTML elements and components:
-
-```astro title="src/components/DynamicAttributes.astro" "{name}" "${name}"
----
-const name = 'Astro'
----
-
-<h1 class={name}>Attribute expressions are supported</h1>
-
-<MyComponent templateLiteralNameAttribute={`MyNameIs${name}`} />
-```
-
-:::caution
-HTML attributes will be converted to strings, so it is not possible to pass functions and objects to HTML elements.
-For example, you can't assign an event handler to an HTML element in an Astro component:
+## Prompts for Program Managers
 
 ```astro
----
-// dont-do-this.astro
-function handleClick() {
-	console.log('button clicked!')
-}
----
-
-<!-- ❌ This doesn't work! ❌ -->
-<button onClick={handleClick}>Nothing will happen when you click me!</button>
+Generate questions to ask in a project kick-off meeting.
 ```
 
-Instead, use a client-side script to add the event handler, like you would in vanilla JavaScript:
+```astro
+Help me create a risk assessment template for my new project.
+```
 
 ```astro
----
-// do-this-instead.astro
----
+Provide an outline for a sprint review meeting.
+```
 
-<button id='button'>Click Me</button>
-<script>
-	function handleClick() {
-		console.log('button clicked!')
-	}
-	document.getElementById('button').addEventListener('click', handleClick)
-</script>
+## Prompts for Project Managers
+
+```astro
+Provide a checklist for project closure and handoff.
+```
+
+```astro
+Generate a weekly schedule template for my project.
+```
+
+```astro
+Generate a pros and cons list for implementing [Feature X].
+```
+
+## Prompts for Process & Product Delivery Enablement
+
+```astro
+Create a [Sequence/Entity Relationship/Cloud Architecture/Flowchart] Diagram for [].
+```
+
+```astro
+Create a [Sequence/Entity Relationship/Cloud Architecture/Flowchart] Diagram for [].
+```
+
+```astro
+Create a [Sequence/Entity Relationship/Cloud Architecture/Flowchart] Diagram for [].
 ```
